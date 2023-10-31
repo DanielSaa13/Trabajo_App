@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Restablecer</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+  <h1>Recuperar Contraseña</h1>
+  </ion-item>
+  <ion-item>
+   <ion-input label="Nombre" labelPlacement="stacked" placeholder="Ingrese Nombre"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input type="password" label="Contraseña" labelPlacement="stacked" placeholder="******"></ion-input>
+  </ion-item>  
+  <ion-item>
+    <ion-input type="password" label="Confirmar Contraseña" labelPlacement="stacked" placeholder="******"></ion-input>
+  </ion-item>  
+  <ion-item>
+   <ion-button [routerLink]="['/home']" size="small">Recuperar</ion-button>
+  </ion-item>
+
+
+  
+</ion-content>
+

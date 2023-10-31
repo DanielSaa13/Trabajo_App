@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Ingreso de Usuario</ion-title>
+    <ion-buttons slot="end">
+    
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+  <h1>Ingreso de Usuario</h1>
+  </ion-item>
+  <ion-item>
+   <ion-input label="Nombre" labelPlacement="stacked" placeholder="Ingrese Nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+   <ion-input type="password" label="Contraseña" labelPlacement="stacked" placeholder="******"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="mostrarAlertaExito()" [routerLink]="['/inicio']"size="small">Ingresar</ion-button>
+  </ion-item>
+  <ion-item>
+    <p><a href="/restablecer">¿Has olvidado tu contraseña?</a></p>
+  </ion-item>
+  
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>inicio</ion-title>
+      <ion-buttons slot="end">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <ion-item>
+      <h1>Inicio</h1>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="mostrarAlertaBienvenida()" [routerLink]="['/home']" size="small">Aceptar</ion-button>
+    </ion-item>
+  </ion-content>
+  
+  
